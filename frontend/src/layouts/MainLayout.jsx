@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  AppBar,
-  Toolbar,
   Typography,
   Container,
   Box,
@@ -13,7 +11,6 @@ import {
   CardMedia,
   CardContent,
   CardActions,
-  Button,
   IconButton,
   Pagination,
 } from "@mui/material";
@@ -22,10 +19,6 @@ import BookMarkAdd from "@mui/icons-material/BookmarkAdd";
 import BookMarkAdded from "@mui/icons-material/BookmarkAdded";
 import { v4 as uuidv4 } from "uuid";
 import Header from "../components/Header";
-
-const Logo = styled("img")({
-  height: "50px",
-});
 
 function MainLayout({ books }) {
   const [tabValue, setTabValue] = useState(0);
